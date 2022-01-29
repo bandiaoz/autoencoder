@@ -85,6 +85,7 @@ for epoch in range(1, num_epochs + 1):
         optimizer.step() # 使用迭代器更新模型权重
 
         processBar.set_description("[{}/{}]".format(epoch, num_epochs))
+        
     # ===================log========================
     total_loss += loss.data
     print('epoch [{}/{}], loss:{:.4f}'.format(epoch+1, num_epochs, total_loss))
